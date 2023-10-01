@@ -1,0 +1,21 @@
+rec_id,First Name ,Age,Gender ,Income,Birthday ,Hometown ,Phone Number 
+rec-0-org,emiily,41,m,64382.793,07-08-2005,newark,(503) 604-6219
+rec-1-org,bridget,27,f,112745.789,12-02-2011,newark,(247) 329-8108
+rec-10-org,erin,82,na,18270.751,17-07-2005,washington,(350) 769-9174
+rec-11-org,shakirah,24,m,92114.978,30-09-2001,newark,(366) 181-8620
+rec-12-org,bianca,51,f,48070.982,10-01-2012,newark,(473) 228-3124
+rec-13-org,sarah,68,na,116041.122,06-12-2005,newark,(706) 425-7413
+rec-14-org,harrison,28,f,66854.714,15-07-2007,newark,(438) 312-2229
+rec-15-org,jonah,75,m,47078.769,26-05-2007,newark,(570) 603-6158
+rec-16-org,xanthe,56,na,10957.291,17-06-2009,newark,(459) 317-0036
+rec-17-org,olivia,60,f,51259.355,08-10-2001,newark,(717) 519-6511
+rec-18-org,vanessa,78,f,40434.408,03-03-2002,reno,(108) 422-5573
+rec-19-org,daniel,63,na,82361.384,07-07-2010,newark,(314) 476-7449
+rec-2-org,tarshya,18,f,170270.755,03-01-2003,newark,(935) 295-8106
+rec-3-org,dante,79,f,99191.737,28-11-2001,newark,(768) 408-2903
+rec-4-org,lachlan,59,f,160726.149,27-04-2010,newark,(278) 020-6610
+rec-5-org,maya,48,f,74319.780,27-12-2008,newark,(382) 064-0072
+rec-6-org,erin,68,na,26684.887,15-04-2005,seattle,(695) 835-0283
+rec-7-org,pino,77,m,81812.771,13-03-2011,newark,(315) 181-8876
+rec-8-org,cameron,88,na,6121.035,05-07-2001,newark,(900) 238-7406
+rec-9-org,sophie,87,f,23933.622,15-08-2010,newark,(616) 796-2515
