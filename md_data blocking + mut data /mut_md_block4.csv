@@ -1,0 +1,21 @@
+,rec_id,Phone.Number,Age,Gender,State,Name,Birthday
+6,rec-05-org,(149) 417-7493,90,male,california,eden,12-12-2007
+12,rec-11-org,(386) 938-4124,55,female,washington,tessd,17-06-2001
+16,rec-15-org,(430) 242-6479,35,female,ohio,maliah,29-05-2005
+19,rec-18-org,(431) 992-9947,50,male,kentucky,douminc,05-08-2006
+22,rec-21-org,(451) 646-0949,57,female,california,elak,05-02-2012
+23,rec-22-org,(175) 977-4819,55,female,virginia,jaob,24-07-2012
+31,rec-30-org,(555) 515-1116,47,NA,wisconsin,cameron,18-06-2005
+34,rec-33-org,(624) 958-9994,83,female,florida,emiily,13-10-2003
+36,rec-35-org,(893) 115-7632,72,male,louisiana,louis,11-08-2009
+37,rec-36-org,(198) 329-2104,73,NA,arizona,yqlan,16-04-2010
+43,rec-42-org,(208) 800-7408,41,NA,north carolina,jad,19-07-2011
+47,rec-46-org,(647) 698-8018,53,female,california,sienna,27-01-2011
+55,rec-54-org,(205) 484-8660,45,male,illinois,olivia,26-02-2004
+67,rec-66-org,(523) 753-6313,61,NA,washington,julmia,20-06-2001
+68,rec-67-org,(276) 714-0136,82,female,louisiana,mathew,18-01-2009
+72,rec-71-org,(157) 377-4256,74,female,texas,isobel,24-08-2005
+83,rec-82-org,(691) 368-0419,34,NA,washington,gianni,26-08-2008
+84,rec-83-org,(700) 404-7855,37,male,ohio,jeack,16-07-2009
+96,rec-95-org,(887) 338-8620,45,female,washington,elled,07-11-2002
+98,rec-97-org,(361) 318-9103,68,female,tennessee,latha,04-04-2004
