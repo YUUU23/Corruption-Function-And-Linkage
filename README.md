@@ -1,10 +1,9 @@
 # Corruption-Function-And-Linkage
 
-This repository contains corruption function with example datasets (original and corrupted) and corruption analysis with similarity matrices. 
+This repository contains corruption function with example datasets (original and corrupted) and corruption analysis with similarity matrices for UTRA Fall 2023 Project "Record Linkage with Differing Errors Across Blocks". 
 
 **BlockingFunction.R**: stores functions for dividing dataset into blocks randomly 
 - df_to_block_equal : split dataset randomly into n-equal-sized blocks 
-
 
 **DataCorruptionFunctions.R** : stores functions used to corrupt one data-value 
 - rand_norm : generates random int in desired range with normal distribution *helper func.* 
@@ -14,14 +13,36 @@ This repository contains corruption function with example datasets (original and
 - corr_del_letter: corrupt value stored as string by deleteing random letter in value (normal distribution) 
 - corr_add_letter: corrupt value stored as string by appending random letter (uniform distribution) to random position in string (normal distribution) 
 
-
 **CorruptionFunctionWithProbability.R** : functions to apply corruption function in DataCorruptionFunctions.R to data-frame columns with beta distribution probability; corruption can be applied to multiple blocks or single data-frame (use block size n=1 for all functions) 
 
 - corr_single_block: corrupts a single block with given probability and function *helper func.*
 - corr_fun_prob: generates vector of probability (desired beta distribution) denoting probability that corruption function is applied to each block
 - block_corr_general: corrupting vector of block where the degree of corruption remains constant
 - corr_num_range_degree: generate random degree of corruption (range) to be used in corr_num_by_range (uniform distribution) 
-- block_corr_with_degree: corrupting vector of block where the degree of corruption varies block to block (i.e. corr_num_by_range)
+- block_corr_with_degree: corrupting vector of block where the degree of corruption varies block to block (i.e. corr_num_by_range), !! currently only used with corr_num_by_range function !! 
 
-  
-  
+**CorruptData.R** : Series of corruption applied to sm_sample_data.csv and md_data.csv (generated randomly be GeCo)
+
+- sm_sample_data.csv corruption:
+    * divided into 2 blocks, below records the probability that corruption is applied to each attribute (col) 
+    * corrupt age: (range) **b1: 0.28, degree: 6 | b2: 0.30 degree 6**
+    * corrupt gender: (missing_val) **b1: 0.30 | b2: 0.19**
+    * corrupt phone number: (zero_nine_number) **b1:0.35 | b2:0.40**
+    * corrupt first name: (add_letter) **b1: 0.76 | b2: 0.61**
+    * corrupt first name: (del_letter) **b1: 0.41 | 0.26**
+
+- md_sample_data.csv corruption:
+    * divided into 5 blocks, below
+
+**sm_sample_dataset.csv**: sample dataset randomly generated from GeCo with 20 entries 
+
+**md_data.csv**: sample dataset randomly generated from GeCo with 100 entries
+
+**sm_data blocking + mut data**: sm_sample_dataset.csv corruption results -> folder stores each block, original and corrupted, as individual dataframes  
+
+**md_data blocking + mut data**: md_data.csv corruption results -> folder stores each block, original and corrupted, as individual dataframes 
+
+
+### After Corruption 
+**SimilarityMatrix.R** 
+
