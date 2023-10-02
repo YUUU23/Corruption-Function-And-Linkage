@@ -24,15 +24,20 @@ This repository contains corruption function with example datasets (original and
 **CorruptData.R** : Series of corruption applied to sm_sample_data.csv and md_data.csv (generated randomly be GeCo)
 
 - sm_sample_data.csv corruption:
-    * divided into 2 blocks, below records the probability that corruption is applied to each attribute (col) 
-    * corrupt age: (range) **b1: 0.28, degree: 6 | b2: 0.30 degree 6**
-    * corrupt gender: (missing_val) **b1: 0.30 | b2: 0.19**
-    * corrupt phone number: (zero_nine_number) **b1:0.35 | b2:0.40**
-    * corrupt first name: (add_letter) **b1: 0.76 | b2: 0.61**
-    * corrupt first name: (del_letter) **b1: 0.41 | 0.26**
+    * divided into 2 blocks, uses beta distribution (2,2) to calculate probability that corruption is applied to each attribute (col) -> 
+    * corrupt age: (range) **b1: 0.28, degree: 6 b2: 0.30 degree 6**
+    * corrupt gender: (missing_val) **0.30 0.19**
+    * corrupt phone number: (zero_nine_number) **0.35 0.40**
+    * corrupt first name: (add_letter) **0.76 0.61**
+    * corrupt first name: (del_letter) **0.41 0.26**
 
 - md_sample_data.csv corruption:
-    * divided into 5 blocks, below
+    * divided into 5 blocks, uses beta distribution (2,5) to calculate probability that corruption is applied to each attribute (col), same corruption functions are applied accordingly as sm_sample_data.csv corruption -> 
+    * corrupt age: **b1: 0.66(degree=5) b2: 0.21(degree=0) b3: 0.41(degree=5) b4: 0.30(degree=4) b5: 0.57(degree=10)**
+    * corrupt gender: **0.20 0.06 0.31 0.27 0.31**
+    * corrupt phone number: **0.12 0.21 0.33 0.38 0.47**
+    * corrupt first name add_letter: **0.13 0.19 0.15 0.43 0.59**
+    * corrupt first name del_letter: **0.29 0.27 0.16 0.40 0.61**
 
 **sm_sample_dataset.csv**: sample dataset randomly generated from GeCo with 20 entries 
 
