@@ -51,5 +51,6 @@ This repository contains corruption function with example datasets (original and
 ### After Corruption 
 **SimilarityMatrix.R** 
 * Apply ``dist`` functions for each column according to the structure of value to generate similarity matrices for each column between corresponding (row, col) between original and mutated data for block1 and block2 in sm_data blocking + mut data folder.
-* TODO: cumulate all distances and generate one comprehensive similarity matrix / make similarity matrix calls into more general functions to apply repeatedly and enhance readability 
+* entry in **matrix diagonal** shows if this value is corrupted ; other entries show distance between two values from different records
+* TODO: cumulate all distances and generate one comprehensive similarity matrix (sum all?) / make similarity matrix calls into more general functions to apply repeatedly and enhance readability 
 
